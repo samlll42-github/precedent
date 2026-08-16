@@ -1,0 +1,38 @@
+name: Waitlist
+description: Record a Precedent waitlist request (manual / internal).
+title: "Waitlist: "
+labels: ["waitlist"]
+body:
+  - type: input
+    id: email
+    attributes:
+      label: Email
+      placeholder: you@firm.com
+    validations:
+      required: true
+  - type: input
+    id: firm
+    attributes:
+      label: Firm name
+  - type: input
+    id: state
+    attributes:
+      label: State
+  - type: input
+    id: bar
+    attributes:
+      label: Bar number
+      description: Optional
+  - type: checkboxes
+    id: licensed
+    attributes:
+      label: License
+      options:
+        - label: I am a licensed attorney in the United States.
+          required: true
+  - type: checkboxes
+    id: hotdocs
+    attributes:
+      label: Templates
+      options:
+        - label: I have HotDocs templates I want converted
